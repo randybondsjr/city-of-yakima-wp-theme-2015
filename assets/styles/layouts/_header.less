@@ -1,0 +1,115 @@
+.admin-bar .navbar {
+  margin-top: 30px;
+}
+.site-header {
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+}
+.site-header .bg-image {
+  background: url("/images/1st-street.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.site-header .bg-image:after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -moz-linear-gradient(center top , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.site-header .container {
+  z-index: 1;
+}
+.site-header .curtain {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.site-subnav {
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+.site-branding, .site-desc {
+  z-index: 2;
+  position: relative;
+}
+.site-desc{
+  padding-top: 350px;
+}
+.long-site-description {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+}
+.important-links a {
+  color: #fff;
+}
+/*******************
+	LOGO
+*******************/
+.logo {
+	margin: 11px 0 0 10px;
+	display: inline-block;
+	color: #ccc;	
+}
+.logo a {
+	color: #efefef;
+}
+.logo a:hover{
+	text-decoration: none;
+}
+.logo .yakima a{
+	color: #fff;
+}
+.logo .city {
+	font-family: 'Balthazar', serif;
+	text-transform:uppercase;
+	font-size: 16px;
+}
+.logo .yakima {
+	font-family: 'candara';
+	font-size: 100px;	
+	line-height: 58px;
+	color: #fff;
+}
+.logo .heartofwa {
+	font-family: 'Balthazar', serif;
+	text-transform:uppercase;
+	line-height: 25px;
+	text-align: right;
+	padding-right: 8px;
+}
+.sitelogo {
+	float: left;
+}
+.sitelogo a{
+	background: url('/images/seal-sprite.png') no-repeat;
+	float: left;
+	margin: 0;
+	display: block;
+	height: 121px;
+	width: 121px;
+}
+
+@media (min-width: 768px){
+  .navbar-form {
+    margin-right: -15px;
+  }
+}
