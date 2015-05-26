@@ -79,3 +79,42 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+$(document).ready(function(){
+  var cbpAnimatedHeader = (function() {
+
+  	var docElem = document.documentElement,
+  		header = document.querySelector( '.cbp-af-header' ),
+  		didScroll = false,
+  		changeHeaderOn = 150;
+  
+  	function init() {
+  		window.addEventListener( 'scroll', function( event ) {
+  			if( !didScroll ) {
+  				didScroll = true;
+  				setTimeout( scrollPage, 150 );
+  			}
+  		}, false );
+  	}
+  
+  	function scrollPage() {
+  		var sy = scrollY();
+  		if ( sy >= changeHeaderOn ) {
+  			console.log("make header small");
+  			$("#banner").addClass("small-logo");
+  		} else {
+    		$("#banner").removeClass("small-logo");
+  			console.log("make header big");
+  		}
+  		didScroll = false;
+  	}
+  
+  	function scrollY() {
+  		return window.pageYOffset || docElem.scrollTop;
+  	}
+  
+  	init();
+
+  })();
+  $('[data-toggle="tooltip"]').tooltip();
+});

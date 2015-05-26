@@ -1,177 +1,196 @@
 <?php use Roots\Sage\Nav; ?>
-<!-- Demo navbar -->
     <div class="navbar yamm navbar-default navbar-fixed-top">
+      <div class="infobar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              Welcome to the City of Yakima
+              <span class="pull-right tk-kremlin-pro-web-semi-exp">
+                The Heart of Central Washington
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
+        <div class="row" id="banner">
+          <div class="col-xs-4 col-sm-5">
+            Call Us: <a href="tel:509.575.6000">509.575.6000</a>
+          </div>
+          <div class="col-xs-4 col-sm-2  text-center">
+          <div class="sitelogo">
+        		<a href="/" title="City of Yakima"><img src="/images/logo.svg"  onerror="this.src='image.png'" alt="City of Yakima"></a>
+          </div>
+          </div>
+          <div class="col-xs-4 col-sm-5 text-right important-links">
+            <a href="#" data-toggle="modal" data-target="#searchModal"><span class="glyphicon glyphicon-search"></span></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Employment Opportunities"><span class="glyphicon glyphicon-user"></span></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Council Packets"><span class="glyphicon glyphicon-briefcase"></span></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Permits"><span class="glyphicon glyphicon-file"></span></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Espa&ntilde;ol"><span class="glyphicon glyphicon-globe"></span></a>
+          </div>
+        </div>
+        
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Yamm Megamenu</a>
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div id="navbar-collapse-1" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav nav-justified">
+            <!-- Classic dropdown -->
+            <li><a href="/wordpress/" title="City of Yakima Home" data-toggle="tooltip" data-placement="bottom" title="City of Yakima Home"><span class="glyphicon glyphicon-home"></span></a></li>
+            <!-- Classic dropdown -->
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Visit Yakima<b class="caret"></b></a>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="/parking">Downtown Parking Map</a></li>
+                <li><a href="http://www.flyykm.com" target="_blank">Fly YKM</a></li>
+                <li><a href="/visit/about/">History</a></li>
+                <li><a href="/visit/museums/">Museums</a></li>
+                <li><a href="http://www.yakimaparks.com/">Parks &amp; Recreation</a></li>
+                <li><a href="/recreation">Recreation</a></li>
+                <li><a href="http://www.visityakima.com/" target="_blank">Visitor Info</a></li>
+                <li><a href="/visit/wine-tours/">Wine Tours</a></li>
+                <li><a href="http://yakimacenter.com/" target="_blank">Yakima Convention Center</a></li>
+              </ul>
+            </li>
+            <!-- Classic dropdown -->
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Business<b class="caret"></b></a>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="/services/codes/permits/">Building Permits</a></li>
+                <li><a href="/downtown/">Downtown Yakima Master Plan</a></li>
+                <li><a href="/business/incentives.asp">Incentive/Business Assistance</a></li>
+                <li><a href="/services/codes/licenses/">Licenses</a></li>
+                <li><a href="/services/purchasing/selling-to-the-city.asp">Selling to the City</a></li>
+                <li><a href="/services/strategic-projects/">Strategic Projects</a></li>
+                <li><a href="/business/whyyakima.asp">Why Yakima?</a></li>
+              </ul>
+            </li>
+            
             <!-- Classic list -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">List<b class="caret"></b></a>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">City Services<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                	<li><a href="/services/animal-control/">Animal Control</a></li>
+                	<li><a href="/calendar/">Events</a></li>
+                	<li><a href="http://agency.governmentjobs.com/yakimawa/">Jobs / Employment</a></li>
+                	<li><a href="/services/codes/licenses/">Licenses</a></li>
+                 	<li><a href="/services/neighborhood-development-services/">Neighborhood Development</a></li>
+                 	<li><a href="/media/news/">News</a></li>
+                 	<li><a href="/services/codes/permits/">Permits</a></li>
+                 	<li><a href="/services/clerks/public-record-request/">Public Records Request</a></li>
+                  <li><a href="/services/refuse/">Refuse (Garbage)</a></li>
+									<li><a href="http://www.yakimatransit.org/">Transit</a></li>
+									<li><a href="http://www.trekyakima.com/" target="_blank">Trek Yakima</a></li>
+									<li><a href="/services/utility-services/">Utility Services</a></li>
+									<li><a href="/services/utilities/online-payment/">Utility Payment</a></li>
+									<li><a href="/yak-back/">Yak Back</a></li>
+									<li><a href="/services/">All Services</a></li>
+								</ul>
+            </li>
+            <!-- Classic list -->
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">City Departments<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li>
                   <!-- Content container to add padding -->
                   <div class="yamm-content">
                     <div class="row">
-                      <ul class="col-sm-2 list-unstyled">
-                        <li>
-                          <p><strong>Section Title</strong></p>
-                        </li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
+                      <ul class="col-sm-3 list-unstyled">
+                        <li><a href="/services/finance/">Accounting</a></li>
+                        <li><a href="http://www.yakimaairterminal.com" target="_blank">Airport</a></li>
+                        <li><a href="/services/animal-control/">Animal Control</a></li>
+                        <li><a href="/services/codes/permits/">Building Permits</a></li>
+                        <li><a href="/services/clerks/">City Clerks</a></li>
+                        <li><a href="/services/city-manager/">City Manager</a></li>
+                        <li><a href="/services/codes/">Code Administration</a></li>
+                        <li><a href="/services/community-development/">Community Development</a></li>
+                        <li><a href="/services/community-relations/">Community Relations</a></li>
+                        <li><a href="/services/economic-development/">Economic Development</a></li>
                       </ul>
-                      <ul class="col-sm-2 list-unstyled">
-                        <li>
-                          <p><strong>Links Title</strong></p>
-                        </li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
-                        <li><a href="#"> Link Item </a></li>
+                      <ul class="col-sm-3 list-unstyled">
+                       
+                        
+                        <li><a href="/services/engineering/">Engineering</a></li>
+                        <li><a href="/services/finance/">Finance</a></li>
+                        <li><a href="http://www.yakimafire.com" target="_blank">Fire</a></li>
+                        <li><a href="/services/gis/">Geographic Information Systems</a></li>
+                        <li><a href="/services/information-technology-services/">Information Technology Services</a></li>
+                        <li><a href="/services/neighborhood-development-services/">Housing</a></li>
+                        <li><a href="/services/hr/">Human Resources</a></li>
+                        <li><a href="/services/city-attorney/">Legal Department</a></li>
+                        <li><a href="/services/codes/licenses/">Licenses</a></li>
                       </ul>
-                      <ul class="col-sm-2 list-unstyled">
-                        <li>
-                          <p><strong>Section Title</strong></p>
-                        </li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
+                      <ul class="col-sm-3 list-unstyled">
+                        <li><a href="http://www.codepublishing.com/WA/yakima/">Municipal Code</a></li>
+                        <li><a href="/services/municipal-court/">Municipal Court</a></li>
+                        <li><a href="/services/neighborhood-development-services/">Neighborhood Development Services</a></li>
+                        <li><a href="/services/parks/">Parks</a></li>
+                        <li><a href="/services/codes/">Permits</a></li>
+                        <li><a href="/services/planning/">Planning</a></li>
+                        <li><a href="http://www.yakimapolice.org">Police</a></li>
+                        <li><a href="/services/purchasing/">Purchasing</a></li>
+                        <li><a href="/services/refuse/">Refuse</a></li>
+                        
                       </ul>
-                      <ul class="col-sm-2 list-unstyled">
-                        <li>
-                          <p><strong>Section Title</strong></p>
-                        </li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                        <li>
-                          <ul>
-                            <li><a href="#"> Link Item </a></li>
-                            <li><a href="#"> Link Item </a></li>
-                            <li><a href="#"> Link Item </a></li>
-                          </ul>
-                        </li>
+                      <ul class="col-sm-3 list-unstyled">
+                        <li><a href="/services/wastewater-treatment-plant/stormwater/">Stormwater</a></li>
+                        <li><a href="/services/strategic-projects/">Strategic Projects</a></li>
+                        <li><a href="/services/streets/">Streets and Traffic</a></li>
+                        <li><a href="/services/cemetery/">Tahoma Cemetery</a></li>
+                        <li><a href="/services/transit/">Transit</a></li>
+                        <li><a href="/services/utility-services/">Utility Services</a></li>
+                        <li><a href="/services/wastewater-treatment-plant/">Wastewater/Sewer</a></li>
+                        <li><a href="/services/water-irrigation/">Water and Irrigation</a></li>
+                        <li><a href="/services/yctv/">YCTV and Y-PAC</a></li>
                       </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <!-- Accordion demo -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Accordion<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <div class="yamm-content">
-                    <div class="row">
-                      <div id="accordion" class="panel-group">
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item #1</a></h4>
-                          </div>
-                          <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">Ut consectetur ullamcorper purus a rutrum. Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna. </div>
-                          </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a></h4>
-                          </div>
-                          <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">Nullam pretium fermentum sapien ut convallis. Suspendisse vehicula, magna non tristique tincidunt, massa nisi luctus tellus, vel laoreet sem lectus ut nibh. </div>
-                          </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible Group Item #3</a></h4>
-                          </div>
-                          <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">Praesent leo quam, faucibus at facilisis id, rhoncus sit amet metus. Sed vitae ipsum non nibh mattis congue eget id augue. </div>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </li>
               </ul>
             </li>
             <!-- Classic dropdown -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Classic<b class="caret"></b></a>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">City Council<b class="caret"></b></a>
               <ul role="menu" class="dropdown-menu">
-                <li><a tabindex="-1" href="#"> Action </a></li>
-                <li><a tabindex="-1" href="#"> Another action </a></li>
-                <li><a tabindex="-1" href="#"> Something else here </a></li>
-                <li class="divider"></li>
-                <li><a tabindex="-1" href="#"> Separated link </a></li>
+                <li><a href="/council/agendas-and-minutes/">Agendas &amp; Minutes</a></li>
+                <li><a href="/council/board/">Boards &amp; Commissions</a></li>
+                <li><a href="/council">Council Members</a></li>
+                <li><a href="/minutes/">Council Business &amp; Legislation</a></li>
+                <li><a href="http://205.172.45.10/Cablecast/Public/Search.aspx?ChannelID=2&SimpleSearch=yakima%20city%20council">City Council Videos</a></li>
+                <li><a href="/minutes/archive/">City Document Center</a></li>
+                <li><a href="/council/city-council-districts/">District Map</a></li>
+                <li><a href="/hearings/">Upcoming Hearings</a></li>
+                <li><a href="http://www.codepublishing.com/WA/yakima/">Municipal Code</a></li>
+                <li><a href="http://www.codepublishing.com/WA/yakima/?YakimaCH.html">Yakima City Charter</a></li>
               </ul>
             </li>
-            <!-- Pictures -->
-            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pictures<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <div class="yamm-content">
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="http://placekitten.com/150/190/"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="http://placekitten.com/150/190/"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="http://placekitten.com/150/190/"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="http://placekitten.com/150/190/"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="http://placekitten.com/150/190/"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="http://placekitten.com/150/190/"></a></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
+            
+            <!-- Classic dropdown -->
+            <li class="dropdown"><a href="/wordpress/test">Contact</a></li>
+            
           </ul>
         </div>
       </div>
     </div>
-<header id="masthead" class="site-header" role="banner">
-	<div class="curtain"></div>
-	<div class="bg-image"></div>
-	<div class="container">
-    <div class="row site-subnav">
-      <div class="col-sm-7">
-        <div class="sitelogo">
-        		<a href="/" title="City of Yakima"><img src="/images/dot.gif" alt="City of Yakima"></a>
-        </div>
-        <div class="logo">
-        	<div class="city"><a href="/" title="City of Yakima">City of</a></div>
-        	<div class="yakima"><a href="/" title="City of Yakima">Yakima</a></div>
-        	<div class="heartofwa"><a href="/" title="City of Yakima">The Heart of Central Washington</a></div>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Search City of Yakima</h4>
       </div>
-      <div class="col-sm-5 text-right">
-        <div class="important-links">
-            <a href="http://www.yakimatransit.org/">Transit</a> |
-            <a href="/minutes/">Council Packets</a> |
-            <a href="/services/codes/permits/">Permits</a> |
-            <a href="http://agency.governmentjobs.com/yakimawa/">Jobs</a> |
-            <a href="http://translate.google.com/translate?hl=en&sl=en&tl=es&u=http://www.yakimawa.gov" class="googletrans" onclick="if (! confirm('Renuncia de traducci&oacute;n de Google\nHa elegido para traducir la p&aacute;gina anterior de (English) to (Spanish). Antes de continuar, por favor lea la cl&aacute;usula de exenci&oacute;n de responsabilidad. Una vez que haya terminado, haga clic en el enlace que dice Continuar Traducir a Google. Gracias.\nLas siguientes declaraciones de descargo de la traducci&oacute;n y toda la informaci&oacute;n suministrada a trav&eacute;s de los enlaces a continuaci&oacute;n se procesan a trav&eacute;s de Google &reg; libre traducci&oacute;n autom&aacute;tica / proceso informatizado y son s&oacute;lo una aproximaci&oacute;n del contenido original. El servicio de traducci&oacute;n Google funciona con la mayor&iacute;a del contenido de la p&aacute;gina web sobre www.yakimawa.gov obstante, algunos art&iacute;culos no realizar la traducci&oacute;n, incluso mientras que en el modo de traducir.\nEl idioma oficial utilizado por el contenido de la Ciudad de Yakima es el sitio Web de Ingl&eacute;s. Un servicio de traducci&oacute;n gratuito proporcionado por Google &reg; est&aacute; disponible a trav&eacute;s de los enlaces que ofrecen de inmediato a condici&oacute;n de que la traducci&oacute;n de nuestras p&aacute;ginas web utilizando el software de Google.\nLas traducciones son s&oacute;lo una aproximaci&oacute;n del sitio en la Web del contenido original. La traducci&oacute;n no debe considerarse exacta, y en algunos casos puede incluir la lengua incorrecta u ofensiva. La ciudad de Yakima no garantiza la exactitud, fiabilidad o la oportunidad de la informaci&oacute;n traducida por este sistema. Adem&aacute;s, en algunas aplicaciones, archivos o elementos no pueden ser traducidos incluyendo gr&aacute;ficos, fotos o formatos de documento port&aacute;til (pdfs).\nLa ciudad de Yakima no avala el uso de la traducci&oacute;n sitio de Google &reg; otros servicios de traducci&oacute;n se puede usar para ver nuestro sitio. Cualquier persona o entidades que se basan en la informaci&oacute;n obtenida del sistema lo hace a su propio riesgo.\nGracias por visitar www.yakimawa.gov!')) { return false; }">Espa&#241;ol</a>
-        </div>
-        <form class="navbar-form pull-right" role="search" id="cse-search-box">
-          <div class="input-group">
-            <input type="hidden" name="cx" value="000682829429502656071:WMX-870012126" />
-  					<input type="hidden" name="cof" value="FORID:1" />
-  					<input type="hidden" name="ie" value="UTF-8" />
-            <input type="text" class="form-control" placeholder="Search" name="q" id="search-question">
-            <div class="input-group-btn">
-              <button class="btn btn-default" name="sa" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      <div class="modal-body">
+        <form class="form-inline" action="/search" id="cse-search-box">
+          <input type="hidden" name="cx" value="000682829429502656071:WMX-870012126" />
+					<input type="hidden" name="cof" value="FORID:1" />
+					<input type="hidden" name="ie" value="UTF-8" />
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" id="search-question" name="q" placeholder="Search">
             </div>
           </div>
-        </form>		
+          <input type="submit" class="btn btn-primary" value="Search" name="sa">
+        </form>
       </div>
+
     </div>
-    <div class="row site-desc">
-			<p class="long-site-description text-center col-sm-8 col-sm-offset-2">Revitalizing the North 1st Street corridor is one of the top budget priorities for the City of Yakima in 2015. <br/><a href="#" class="btn btn-primary btn-lg">2015 City of Yakima Budget in Brief</a></p>
-		</div>
-	</div>
-</header>
+  </div>
+</div>

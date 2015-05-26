@@ -6,4 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" type="application/rss+xml" title="<?= get_bloginfo('name'); ?> Feed" href="<?= esc_url(get_feed_link()); ?>">
     <?php wp_head(); ?>
+    <script src="//use.typekit.net/wwk2ujf.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
